@@ -2,12 +2,12 @@
 
 # Background
 One very convenient way to persistently store the internal state of a node service is to just write the state object as JSON.
-For use-cases where Databases donot make sense this is the way to go.
+For usecases where Databases donot make sense this is the way to go.
 
 This is a small convenience package for this usecase, especially convenient to have some caveats solved.
 
 - When the service is being killed on writing the state, the file might become corrupted -> Creating a backup
-- Too many states, too much memory usage -> Caching of files and limiting the number of simultaneously held states.
+- Too many states, too much memory usage -> Caching of files and limiting the number of simultaneously held states or state-chunks.
 
 *Note: This package is not made for maximum performance. Especially not to serve 10k+ clients having ther states to be loaded and saved in a few seconds. This is made for when 10k+ clients might be expected over a lifetime with states for each client larger than 100kb thus holding everything in-memory would be infeasible, but we still don't want to read from disk every time when a certain client is active.*
 
