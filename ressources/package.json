@@ -1,25 +1,22 @@
 {
-  "name": "temporaryFiles",
+  "name": "cached-persistentstate",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "Saving and loading prsistent states in JSON files plus caching",
+  "main": "statecachemodule.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["cache", "json", "node", "file", "files","thingy", "state", "persistent", "persistentstate"],
   "author": "Lenard Frommelt lenard@frommelt.dev",
   "license": "Unlicense",
   "repository": {
     "type": "git",
-    "url": "git+https://.git"
+    "url": "git+https://github.com/JhonnyJason/cached-persistentstate.git"
   },
   "bugs": {
-    "url": "https://"
+    "url": "https://github.com/JhonnyJason/cached-persistentstate/issues"
   },
-  "homepage": "https://",
+  "homepage": "https://github.com/JhonnyJason/cached-persistentstate-output#readme",
   "dependencies": {},
-  "type": "module",
-  "bin": {
-    "temporaryFiles": "./index.js"
-  }
+  "type": "module"
 }
