@@ -118,6 +118,7 @@ Without default initialization `./state` will not be created.
 - Will save the new json string to the file and copy it as a backup.
 
 *Note: this also works without passing any obj to simply save the same object again if it changed in the meantime.*
+*Note: if you change but donot save the obj and it is cut from the cache then - the changes will be lost.*
 
 ## remove(id)
 Aaand it's gone, it's all gone!
